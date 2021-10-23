@@ -17,11 +17,5 @@ public class Main {
         } catch (Exception e) {
             System.out.println("** Ocorreu um error: " + e.getMessage());
         }
-
-        Veiculo celta = new Veiculo();
-        celta.setMarca("GM");
-        celta.setNome("Celta");
-        System.out.println(celta.getNome());
-        celta.ligar();
     }
 }

@@ -1,5 +1,7 @@
 package br.com.home.javaoo.classes;
 
+import br.com.home.javaoo.excecoes.ChassiInvalidoException;
+
 public class Veiculo {
     private String nome;
     private String marca;
@@ -27,11 +29,11 @@ public class Veiculo {
         return chassi;
     }
 
-    public void setChassi(String chassi) throws Exception {
+    public void setChassi(String chassi) throws ChassiInvalidoException {
         if(chassi.length() == 5) {
             this.chassi = chassi;
         } else {
-            throw new Exception("O chassi informado e invalido!");
+            throw new ChassiInvalidoException(chassi);
         }
     }
 
