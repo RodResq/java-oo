@@ -1,18 +1,19 @@
 package br.com.home.javaoo.main;
 
-import br.com.home.javaoo.classes.Veiculo;
+import br.com.home.javaoo.classes.Carro;
 
 public class Main {
 
     public static void main(String[] args) {
         try {
-            Veiculo corsa = new Veiculo();
+            Carro corsa = new Carro();
             corsa.setMarca("GM");
             corsa.setNome("Corsa");
-            corsa.setChassi("ABCD");
+            corsa.setChassi("ABCDE");
             corsa.abastecer(10);
             System.out.println(corsa.getNome());
             System.out.println(corsa.getQuantidadeCombustivel());
+            System.out.println(corsa.getQuantidadeRodas());
             corsa.ligar();
         } catch (Exception e) {
             System.out.println("** Ocorreu um error: " + e.getMessage());
