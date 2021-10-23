@@ -2,6 +2,16 @@ package br.com.home.javaoo.classes;
 
 public class Carro extends Veiculo {
 
+    private int quatidadePortas;
+
+    public int getQuatidadePortas() {
+        return quatidadePortas;
+    }
+
+    public void setQuatidadePortas(int quatidadePortas) {
+        this.quatidadePortas = quatidadePortas;
+    }
+
     public Carro() {
         this.quantidadeRodas = 4;
     }
