@@ -27,8 +27,12 @@ public class Veiculo {
         return chassi;
     }
 
-    public void setChassi(String chassi) {
-        this.chassi = chassi;
+    public void setChassi(String chassi) throws Exception {
+        if(chassi.length() == 5) {
+            this.chassi = chassi;
+        } else {
+            throw new Exception("O chassi informado e invalido!");
+        }
     }
 
     public int getQuantidadeRodas() {
