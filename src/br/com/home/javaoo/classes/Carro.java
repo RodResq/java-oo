@@ -1,6 +1,6 @@
 package br.com.home.javaoo.classes;
 
-public class Carro extends Veiculo {
+public final class Carro extends Veiculo {
 
     private int quatidadePortas;
 
