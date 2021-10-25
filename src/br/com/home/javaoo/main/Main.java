@@ -1,8 +1,7 @@
 package br.com.home.javaoo.main;
 
 import br.com.home.javaoo.classes.Carro;
-import br.com.home.javaoo.classes.Moto;
-import br.com.home.javaoo.classes.Veiculo;
+import br.com.home.javaoo.classes.VeiculoBase;
 import br.com.home.javaoo.excecoes.AbastecimentoVeiculoLigadoException;
 import br.com.home.javaoo.excecoes.ChassiInvalidoException;
 
@@ -11,7 +10,7 @@ public class Main {
     public static void main(String[] args) {
         try {
             //principio da subst de Liskov -- Polimorfismo
-            Veiculo corsa = new Carro("Corsa", "GM");
+            VeiculoBase corsa = new Carro("Corsa", "GM");
             corsa.setChassi("ABCDE");
 //            ((Carro)corsa).setQuatidadePortas(4);
             System.out.println(corsa.getNome());

@@ -4,8 +4,12 @@ import br.com.home.javaoo.excecoes.AbastecimentoVeiculoLigadoException;
 import br.com.home.javaoo.excecoes.AceleracaoVeiculoLigadoException;
 import br.com.home.javaoo.excecoes.ChassiInvalidoException;
 import br.com.home.javaoo.excecoes.FrenagemVeiculoLigadoException;
+import br.com.home.javaoo.interfaces.Andador;
+import br.com.home.javaoo.interfaces.Ligador;
+import br.com.home.javaoo.interfaces.Veiculo;
 
-public abstract class Veiculo {
+public abstract class VeiculoBase implements Veiculo, Ligador, Andador {
+
     private String nome;
     private String marca;
     private String chassi;
@@ -14,7 +18,7 @@ public abstract class Veiculo {
     protected Boolean ligado;
     protected float velocidade;
 
-    public Veiculo() {
+    public VeiculoBase() {
         this.ligado = false;
         this.velocidade = 0;
     }

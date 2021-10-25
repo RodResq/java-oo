@@ -3,7 +3,7 @@ package br.com.home.javaoo.classes;
 import br.com.home.javaoo.excecoes.AceleracaoVeiculoLigadoException;
 import br.com.home.javaoo.excecoes.FrenagemVeiculoLigadoException;
 
-public final class Moto extends Veiculo{
+public final class Moto extends VeiculoBase {
 
     public Moto() {
         this.quantidadeRodas = 2;
