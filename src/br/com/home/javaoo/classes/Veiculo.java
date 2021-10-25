@@ -5,7 +5,7 @@ import br.com.home.javaoo.excecoes.AceleracaoVeiculoLigadoException;
 import br.com.home.javaoo.excecoes.ChassiInvalidoException;
 import br.com.home.javaoo.excecoes.FrenagemVeiculoLigadoException;
 
-public class Veiculo {
+public abstract class Veiculo {
     private String nome;
     private String marca;
     private String chassi;
@@ -98,5 +98,7 @@ public class Veiculo {
             throw new FrenagemVeiculoLigadoException();
         }
     }
+
+    public abstract void preparar();
 
 }

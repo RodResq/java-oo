@@ -11,7 +11,7 @@ public class Main {
     public static void main(String[] args) {
         try {
             //principio da subst de Liskov -- Polimorfismo
-            Veiculo corsa = new Moto("Corsa", "GM");
+            Veiculo corsa = new Carro("Corsa", "GM");
             corsa.setChassi("ABCDE");
 //            ((Carro)corsa).setQuatidadePortas(4);
             System.out.println(corsa.getNome());
@@ -20,6 +20,7 @@ public class Main {
             System.out.println(String.format("O veiculo %s esta ligado ? %b", corsa.getNome(), corsa.isLigado()));
             corsa.abastecer(10);
             corsa.ligar();
+            corsa.preparar();
             corsa.acelerar();
             System.out.println(String.format("Velocidade atual do veiculo %f", corsa.getVelocidade()));
             corsa.frear();
